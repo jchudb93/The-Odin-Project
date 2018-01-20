@@ -14,7 +14,7 @@ newGrid.addEventListener('click',(e)=>{
 		container.removeChild(container.firstChild);
 	}
 
-	console.log(value)
+
 	createGrid(value);
 	e.preventDefault();
 });
@@ -22,8 +22,8 @@ newGrid.addEventListener('click',(e)=>{
 const createSquare = (size) =>{
 	let div = document.createElement('div');
 	div.classList.add('square');
-    div.style.width = '${size}px';
-    div.style.height = '${size}px';
+    div.style.width = `${size}px`;
+    div.style.height = `${size}px`;
     return div;
 }
 
@@ -31,6 +31,7 @@ const createGrid = (side) => {
 	for(i = 0; i <side*side;i++){
 		container.appendChild(createSquare(contArea / side));
 	};
+	console.log('exito');
 
 	let allSquares = document.querySelectorAll('.square');
 		allSquares.forEach(square => {
@@ -39,3 +40,5 @@ const createGrid = (side) => {
 			})
 		});
 }
+
+createGrid(50);
