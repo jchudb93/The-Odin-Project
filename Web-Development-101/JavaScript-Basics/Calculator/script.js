@@ -12,7 +12,7 @@ const modify = (operator,a) => {
 }
 
 const numbers = document.querySelectorAll(".num");
-const screen = document.querySelectorAll("#values");
+const screen = document.querySelector("#values");
 let numbersDisplay = "";
 let total;
 let operatorStore;
@@ -52,6 +52,7 @@ let changeDisplay = (e) => {
 const operators = document.querySelectorAll("#operator");
 const operatorDisplay = document.querySelector("#operatorDisplay");
 const decimal = document.querySelector("#dec");
+
 let handleOperator = (e) => {
 	operatorDisplay.textContent = e.target.textContent;
 	if(!operatorActivated){
