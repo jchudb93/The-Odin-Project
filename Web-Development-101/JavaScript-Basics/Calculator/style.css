@@ -13,7 +13,7 @@ body{
 
 #calculator{
 	width: 480px;
-	height: 600px;
+	height: 750px;
 	margin: 20px auto;
 	/*border: 4px solid #565656;*/
 	/*border-radius: 2%;*/
@@ -72,7 +72,7 @@ body{
 	height: 25%;
 }
 
-.num, .operator{
+.num, .operator, .modifier{
 	display: inline-block;
     position: relative;
     background-color: #1d1f20;
@@ -85,6 +85,12 @@ body{
     margin: 2% auto;
 }
 
+#clean{
+	background-color:  rgba(250,100,0,0.3);
+}
 .operator{
 	background-color:  rgba(250,100,0,0.3);
+}
+#modifier{
+	background-color:  rgba(182,191,187,0.3);
 }

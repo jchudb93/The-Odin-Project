@@ -6,17 +6,24 @@
 <body>
 	<div id="calculator">
 		<div id="display">
-			<div id="operatorDisplay"> +
+			<div id="operatorDisplay"> 
 			</div>
 			<div id="values">0</div>
 		</div>
 		<div id="board">
 			<div id="numbers">
 				<div class="row">
+					<span class="operator" id="modifier">C</span>
+					<span class="operator" id="modifier">+/-</span>
+					<span class="operator" id="modifier">%</span>
+					<span class="operator">÷</span>
+				</div>	
+
+				<div class="row">
 					<span class="num">7</span>
 					<span class="num">8</span>
 					<span class="num">9</span>
-					<span class="operator">+</span>
+					<span class="operator">x</span>
 				</div>	
 				<div class="row">
 					<span class="num">4</span>
@@ -28,17 +35,17 @@
 					<span class="num">1</span>
 					<span class="num">2</span>
 					<span class="num">3</span>
-					<span class="operator">÷</span>
+					<span class="operator">+</span>
 				</div>	
 				<div class="row">
 					<span class="num">0</span>
-					<span class="num">.</span>
-					<span class="operator">C</span>
+					<span class="num" id="dec">.</span>
+					<span class="num" id="clean">CE</span>
 					<span class="operator">=</span>
 				</div>	
 			</div>
 		</div>
 	</div>
-
+<script type="text/javascript" src="script.js"></script>
 
 </body>
