@@ -94,3 +94,18 @@ body{
 #modifier{
 	background-color:  rgba(182,191,187,0.3);
 }
+
+.num:hover ,.operator:hover ,.modifier:hover {
+	background: rgba(255,255,255,0.8);
+	color: #333;
+}
+
+.num:active {
+	box-shadow: 0px 0px rgba(0, 0, 0, 0.2);
+	top: 4px;
+}
+
+.num:active {
+	box-shadow: 0px 0px #717a33;
+	top: 4px;
+}
