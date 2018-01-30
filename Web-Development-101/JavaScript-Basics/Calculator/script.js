@@ -31,7 +31,7 @@ let resetFunctions = () => {
 
 let changeDisplay = (e) => {
 	let num = e.target.textContent;
-	if(num == 'C'){
+	if(num == 'CE'){
 		resetFunctions();
 	}
 	else{
@@ -49,9 +49,9 @@ let changeDisplay = (e) => {
 	}
 }
 
-const operators = document.querySelectorAll("#operator");
+var operators = document.querySelector(".operator");
 const operatorDisplay = document.querySelector("#operatorDisplay");
-const decimal = document.querySelector("#dec");
+const decimal = document.querySelector(".dec");
 
 let handleOperator = (e) => {
 	operatorDisplay.textContent = e.target.textContent;
@@ -137,4 +137,11 @@ let handleOperator = (e) => {
 }
 
 numbers.forEach(number => number.addEventListener("click", changeDisplay));
-operators.forEach(operator => opertor.addEventListener("click",handleOperator));
+/*operators.forEach(operator => opertor.addEventListener("click",handleOperator));*/
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+  		for ( i=0; i< operators.length; i++){
+			operators[i].addEventListener("click",handleOperator);
+		}
+			return;
+});
