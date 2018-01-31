@@ -49,7 +49,8 @@ let changeDisplay = (e) => {
 	}
 }
 
-var operators = document.querySelector(".operator");
+var operators = document.querySelectorAll(".operator");
+
 const operatorDisplay = document.querySelector("#operatorDisplay");
 const decimal = document.querySelector(".dec");
 
@@ -135,13 +136,8 @@ let handleOperator = (e) => {
 		}
 	}
 }
-
+for ( i=0; i< operators.length; i++){
+	operators[i].addEventListener("click",handleOperator);
+}
 numbers.forEach(number => number.addEventListener("click", changeDisplay));
 /*operators.forEach(operator => opertor.addEventListener("click",handleOperator));*/
-
-document.addEventListener("DOMContentLoaded", function(event) { 
-  		for ( i=0; i< operators.length; i++){
-			operators[i].addEventListener("click",handleOperator);
-		}
-			return;
-});
